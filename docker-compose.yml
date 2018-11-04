@@ -1,0 +1,10 @@
+db:
+ build: ./ 
+ restart: always
+ volumes: 
+   - ./data:/var/lib/postgresql/data
+ environment:
+   POSTGRES_PASSWORD: example
+   POSTGRES_USER: test
+   POSTGRES_DB: test
+
